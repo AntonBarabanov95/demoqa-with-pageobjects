@@ -25,11 +25,13 @@ public class PracticeFormTests {
 
     @Test
     void fillPracticeFormTest() {
+        String firstName = "Anton";
 
         new RegistrationPage().openPage();
 
-        $("#firstName").setValue("Anton");
-        $("#lastName").setValue("Barabanov");
+        new RegistrationPage().setFirstName(firstName);
+        new RegistrationPage().setLastName();
+
         $("#userEmail").setValue("anton.barabanov95@gmail.com");
 
         $("#genterWrapper").$(byText("Male")).click();

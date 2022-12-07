@@ -12,4 +12,12 @@ public class RegistrationPage {
         executeJavaScript("$('footer').remove()");
         executeJavaScript("$('#fixedban').remove()");
     }
+
+    public void setFirstName(String value){
+        $("#firstName").setValue(value);
+    }
+
+    public void setLastName(){
+        $("#lastName").setValue("Barabanov");
+    }
 }
